@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap, from Twitter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Stylesheets -->
+		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="css/styler/style.css" rel="stylesheet">
+		<link href="css/styler/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+  	<body cz-shortcut-listen="true">
+  		<header>
+  			<div class="container-fluid">
+  				<div id="branding" class="pull-left">
+  					<h1 class="light no-margin">Metroboard</h1>
+  				</div>
+  				<button type="button" class="btn btn-flat btn-navbar-mobile pull-right hidden-desktop" data-toggle="collapse" data-target=".sidebar-left">
+		            <span class="icon-reorder"></span>
+		        </button>
+  			</div>
+  		</header>
+<aside class="sidebar sidebar-left collapse">
+	<form class="sidebar-search">
+		<input type="text" placeholder="Search">
+   	</form>
+	<h3 class="sidebar-header light">Navigation</h3>
+	<ul class="navigation-list unstyled">
+		<li >
+		  <a href="index.html">
+		  	<i class="icon-desktop"></i>
+			<span>Start</span>
+		  </a>
+		</li>
+		<li  class="current" >
+		  <a href="forms.html">
+		  	<i class="icon-check"></i>
+			<span>Forms</span>
+		  </a>
+		</li>
+		<li >
+		  <a href="messaging.html">
+		  	<i class="icon-comment"></i>
+			<span>Messaging</span>
+		  </a>
+		</li>
+		<li >
+		  <a href="calendar.html">
+		  	<i class="icon-calendar"></i>
+			<span>Calendar</span>
+		  </a>
+		</li>
+		<li >
+		  <a href="charts.html">
+		  	<i class="icon-bar-chart"></i>
+			<span>Charts</span>
+		  </a>
+		</li>
+		<!-- <li>
+		  <a href="icons.html">
+		  	<i class="icon-heart"></i>
+			<span>Icons</span>
+		  </a>
+		</li> -->
+		<li >
+		  <a href="profile.html">
+		  	<i class="icon-user"></i>
+			<span>Profile</span>
+		  </a>
+		</li>
+		<li >
+		  <a href="tables.html">
+		  	<i class="icon-th"></i>
+			<span>Tables</span>
+		  </a>
+		</li>
+
+		<li class="special">
+		  <a href="#">
+			<span>New Category</span>
+		  </a>
+		</li>
+	</ul>
+</aside>
+
+<section class="content">
+	<header class="content-header">
+		<h1 class="light no-margin">Forms</h1>
+	</header>
+	<section class="bordered">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<h3 class="section-header light aligncenter">Standard Form Elements</h3>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span10 offset1">
+					<form class="form-skin shadow">
+						<fieldset>
+							<legend>Legend</legend>
+							<label>Label name</label>
+						    <input type="text" placeholder="Type something…">
+						    <span class="help-block">Example block-level help text here.</span>
+						    <label>Textarea</label>
+						    <textarea rows="3"></textarea>
+						    <label class="checkbox">
+						      	<input type="checkbox"> Check me out
+						    </label>
+							 
+							<label class="radio">
+							  	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							  	Option one is this and that—be sure to include why it's great
+							</label>
+							<label class="radio">
+							  	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							  	Option two can be something else and selecting it will deselect option one
+							</label>
+							<div>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+								</label>
+								<label class="checkbox inline">
+								  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+								</label>
+							</div>
+						    <button type="submit" class="btn btn-flat btn-blue no-radius">Submit</button>
+						</fieldset>
+					</form>
+					<form class="form-search form-skin shadow">
+						<legend>Search Form</legend>
+						<input type="text" class="input-medium search-query">
+						<button type="submit" class="btn btn-flat btn-blue no-radius">Search</button>
+					</form>
+					<form class="form-inline form-skin shadow">
+						<legend>Inline Form</legend>
+						<input type="text" class="input-small" placeholder="Email">
+						<input type="password" class="input-small" placeholder="Password">
+						<label class="checkbox">
+						    <input type="checkbox"> Remember me
+						</label>
+						<button type="submit" class="btn btn-flat btn-blue no-radius">Sign in</button>
+					</form>
+					<form class="form-horizontal form-skin">
+						<legend>Horizontal Form</legend>
+						<div class="control-group">
+						    <label class="control-label" for="inputEmail">Email</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" placeholder="Email">
+						    </div>
+						</div>
+						<div class="control-group">
+						    <label class="control-label" for="inputPassword">Password</label>
+						    <div class="controls">
+						      <input type="password" id="inputPassword" placeholder="Password">
+						    </div>
+						  </div>
+						<div class="control-group">
+						    <div class="controls">
+						      <label class="checkbox">
+						        <input type="checkbox"> Remember me
+						      </label>
+						      <button type="submit" class="btn btn-flat btn-blue no-radius">Sign in</button>
+						    </div>
+						</div>
+					</form>
+					<form class="form-skin">
+						<legend>Select</legend>
+						<select>
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						</select>
+						<br>
+						<select multiple="multiple">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						</select>
+					</form>
+					<form class="form-skin">
+						<legend>Prepended and appended inputs</legend>
+						<label>Input Prepend</label>
+						<div class="input-prepend">
+						  <span class="add-on">@</span>
+						  <input id="prependedInput" type="text" placeholder="Username">
+						</div>
+						<br>
+						<label>Input Append</label>
+						<div class="input-append">
+						  <input id="appendedInput" type="text">
+						  <span class="add-on">.00</span>
+						</div>
+						<br>
+						<label>Input Prepend and Append</label>
+						<div class="input-prepend input-append">
+						  <span class="add-on">$</span>
+						  <input id="appendedPrependedInput" type="text">
+						  <span class="add-on">.00</span>
+						</div>
+						<br>
+						<label>Button instead of text</label>
+						<div class="input-append">
+						  <input id="appendedInputButton" type="text">
+						  <button class="btn" type="button">Go!</button>
+						</div>
+						<br>
+						<div class="input-append">
+						  <input id="appendedInputButtons" type="text">
+						  <button class="btn" type="button">Search</button>
+						  <button class="btn" type="button">Options</button>
+						</div>
+						<br>
+						<div class="input-append">
+			              <input id="appendedDropdownButton" type="text">
+			              <div class="btn-group">
+			                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+			                <ul class="dropdown-menu">
+			                  <li><a href="#">Action</a></li>
+			                  <li><a href="#">Another action</a></li>
+			                  <li><a href="#">Something else here</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="#">Separated link</a></li>
+			                </ul>
+			              </div><!-- /btn-group -->
+			            </div>
+			            <br>
+			            <div class="input-prepend">
+			              <div class="btn-group">
+			                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+			                <ul class="dropdown-menu">
+			                  <li><a href="#">Action</a></li>
+			                  <li><a href="#">Another action</a></li>
+			                  <li><a href="#">Something else here</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="#">Separated link</a></li>
+			                </ul>
+			              </div><!-- /btn-group -->
+			              <input id="prependedDropdownButton" type="text">
+			            </div>
+			            <br>
+			            <div class="input-prepend input-append">
+			              <div class="btn-group">
+			                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+			                <ul class="dropdown-menu">
+			                  <li><a href="#">Action</a></li>
+			                  <li><a href="#">Another action</a></li>
+			                  <li><a href="#">Something else here</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="#">Separated link</a></li>
+			                </ul>
+			              </div><!-- /btn-group -->
+			              <input id="appendedPrependedDropdownButton" type="text">
+			              <div class="btn-group">
+			                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+			                <ul class="dropdown-menu">
+			                  <li><a href="#">Action</a></li>
+			                  <li><a href="#">Another action</a></li>
+			                  <li><a href="#">Something else here</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="#">Separated link</a></li>
+			                </ul>
+			              </div><!-- /btn-group -->
+			            </div>
+			            <br>
+			            <label>Segmented dropdown groups</label>
+			            <div class="input-prepend">
+			              <div class="btn-group">
+			                <button class="btn" tabindex="-1">Action</button>
+			                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+			                  <span class="caret"></span>
+			                </button>
+			                <ul class="dropdown-menu">
+			                  <li><a href="#">Action</a></li>
+			                  <li><a href="#">Another action</a></li>
+			                  <li><a href="#">Something else here</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="#">Separated link</a></li>
+			                </ul>
+			              </div>
+			              <input type="text">
+			            </div>
+			            <br>			            
+					</form>
+					<form class="form-skin shadow">
+						<legend>Input sizing</legend>
+						<input class="input-block-level" type="text" placeholder=".input-block-level">
+			            <br>
+			            <input class="input-mini" type="text" placeholder=".input-mini">
+			            <br>
+						<input class="input-small" type="text" placeholder=".input-small">
+						<br>
+						<input class="input-medium" type="text" placeholder=".input-medium">
+						<br>
+						<input class="input-large" type="text" placeholder=".input-large">
+						<br>
+						<input class="input-xlarge" type="text" placeholder=".input-xlarge">
+						<br>
+						<input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bordered">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<h3 class="section-header light aligncenter">Simplicity Multi-step Sign-up Form</h3>
+
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span10 offset1">
+					<div class="step-form tabbed">
+						<div class="form-header">
+							<h3 class="light">Sign in to gain full access!</h3>
+						</div>
+						<ul class="nav nav-tabs row-fluid" id="myTab">
+							<li class="active span4">
+								<a href="#form-first">
+									<div class="count">1</div>
+									<div class="desc">Account <span>information</span></div>
+								</a>
+							</li>
+							<li class="span4">
+								<a href="#form-second">
+									<div class="count">2</div>
+									<div class="desc">Personal <span>information</span></div>
+								</a>
+							</li>
+							<li class="span4">
+								<a href="#form-third">
+									<div class="count">3</div>
+									<div class="desc">Payment <span>information</span></div>
+								</a>
+							</li>
+						</ul>
+						 
+						<div class="tab-content">
+						  	<div class="tab-pane active" id="form-first">
+								<form class="form-skin">
+									<fieldset>
+										<div class="control-group">
+											<label class="control-label" for="inputUsername">Username</label>
+											<div class="controls">
+											  <input class="input-block-level" type="text" id="inputUsername" placeholder="Enter preferred username">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputEmail">Email</label>
+											<div class="controls">
+											  <input class="input-block-level" type="text" id="inputEmail" placeholder="Enter your email address">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputPassword">Password</label>
+											<div class="controls">
+												<input class="input-block-level" type="password" id="inputPassword" placeholder="Password">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+								<div class="form-action clearfix">
+									<a class="btn btn-flat btn-blue pull-right no-radius" href="#form-second">Next</a>
+								</div>
+						  	</div>
+						  	<div class="tab-pane" id="form-second">
+						  		<form class="form-skin">
+									<fieldset>
+										<select>
+										  <option>1</option>
+										  <option>2</option>
+										  <option>3</option>
+										  <option>4</option>
+										  <option>5</option>
+										</select>
+										<br>
+										<select multiple="multiple">
+										  <option>1</option>
+										  <option>2</option>
+										  <option>3</option>
+										  <option>4</option>
+										  <option>5</option>
+										</select>
+									</fieldset>
+								</form>
+								<div class="form-action clearfix">
+									<a class="btn btn-flat btn-blue pull-right no-radius" href="#form-second">Next</a>
+								</div>
+						  	</div>
+						  	<div class="tab-pane" id="form-third">
+						  		<form class="form-skin">
+									<fieldset>
+										<label>Label name</label>
+									    <input type="text" placeholder="Type something…">
+									    <span class="help-block">Example block-level help text here.</span>
+									    <label>Textarea</label>
+									    <textarea rows="3"></textarea>
+									    <label class="checkbox">
+									      	<input type="checkbox"> Check me out
+									    </label>
+										 
+										<label class="radio">
+										  	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										  	Option one is this and that—be sure to include why it's great
+										</label>
+										<label class="radio">
+										  	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										  	Option two can be something else and selecting it will deselect option one
+										</label>
+										<div>
+											<label class="checkbox inline">
+											  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+											</label>
+											<label class="checkbox inline">
+											  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+											</label>
+											<label class="checkbox inline">
+											  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+											</label>
+										</div>
+									</fieldset>
+								</form>
+								<div class="form-action clearfix">
+									<a class="btn btn-flat btn-blue pull-right no-radius" href="#form-second">Next</a>
+								</div>
+						  	</div>
+						</div>
+					</div>
+								
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bordered">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<h3 class="section-header light aligncenter">Accordian Form</h3>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="accordion accordion-form span10 offset1" id="accordion-form">
+                <div class="accordion-group">
+					<div class="accordion-heading aligncenter">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-form" href="#collapseOne">
+						  	<div class="count">1</div>
+							<div class="desc">Account Information</div>
+						</a>
+					</div>
+					<div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+						<div class="accordion-inner">
+				 			<form class="form-skin">
+								<fieldset>
+									<div class="control-group">
+										<label class="control-label" for="inputUsername">Username</label>
+										<div class="controls">
+										  <input class="input-block-level" type="text" id="inputUsername" placeholder="Enter preferred username">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="inputEmail">Email</label>
+										<div class="controls">
+										  <input class="input-block-level" type="text" id="inputEmail" placeholder="Enter your email address">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="inputPassword">Password</label>
+										<div class="controls">
+											<input class="input-block-level" type="password" id="inputPassword" placeholder="Password">
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+                </div>
+                <div class="accordion-group">
+					<div class="accordion-heading aligncenter">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-form" href="#collapseTwo">
+							<div class="count">2</div>
+							<div class="desc">Personal Information</div>
+						</a>
+					</div>
+					<div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+						<div class="accordion-inner">
+							<form class="form-skin">
+								<fieldset>
+									<div class="control-group">
+										<label class="control-label" for="inputUsername">Username</label>
+										<div class="controls">
+										  <input class="input-block-level" type="text" id="inputUsername" placeholder="Enter preferred username">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="inputEmail">Email</label>
+										<div class="controls">
+										  <input class="input-block-level" type="text" id="inputEmail" placeholder="Enter your email address">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="inputPassword">Password</label>
+										<div class="controls">
+											<input class="input-block-level" type="password" id="inputPassword" placeholder="Password">
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+                </div>
+                <div class="accordion-group">
+					<div class="accordion-heading aligncenter">
+						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-form" href="#collapseThree">
+							<div class="count">3</div>
+							<div class="desc">Shipping Information</div>
+						</a>
+					</div>
+					<div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
+						<div class="accordion-inner">
+							<form class="form-skin">
+								<fieldset>
+									<div class="control-group">
+										<label class="control-label" for="inputUsername">Username</label>
+										<div class="controls">
+										  <input class="input-block-level" type="text" id="inputUsername" placeholder="Enter preferred username">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="inputEmail">Email</label>
+										<div class="controls">
+										  <input class="input-block-level" type="text" id="inputEmail" placeholder="Enter your email address">
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="inputPassword">Password</label>
+										<div class="controls">
+											<input class="input-block-level" type="password" id="inputPassword" placeholder="Password">
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+                </div>
+              </div>
+			</div>
+		</div>
+	</section>
+</section>
+
+<aside class="sidebar sidebar-right">
+	<div class="widget">
+		<header class="widget-header">
+			<i class="icon-user icon-metro"></i>
+			<h3 class="light">online users</h3>
+		</header>
+		<article class="widget-content">
+			<ul class="unstyled user-list clearfix">
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+				<li><img src="img/styler/user-small.png"></li>
+			</ul>
+		</article>
+	</div>
+	<div class="widget bg-color blue">
+		<header class="widget-header">
+			<i class="icon-calendar icon-metro"></i>
+			<h3>events</h3>
+		</header>
+		<article class="widget-content">
+			Ad artisan accusamus mixtape aliquip, bushwick try-hard deep v scenester biodiesel jean shorts keffiyeh. Bespoke qui master cleanse anim tousled minim. Art party occupy post-ironic messenger bag ut, quinoa mlkshk twee anim banksy lo-fi tonx voluptate.
+		</article>
+	</div>
+	<div class="widget bg-color dark-grey">
+		<header class="widget-header">
+			<i class="icon-coffee icon-metro"></i>
+			<h3>projects</h3>
+		</header>
+		<article class="widget-content">
+			<ul class="unstyled list">
+				<li>
+					<i class="icon-folder-close"></i> 
+					<span class="font-bold">Metroboard</span>
+					<span class="pull-right label label-success">completed</span>
+				</li>
+				<li>
+					<i class="icon-folder-close"></i> 
+					<span class="font-bold">Boardskin</span>
+					<span class="pull-right label label-important">7 tasks</span>
+				</li>
+				<li>
+					<i class="icon-folder-close"></i> 
+					<span class="font-bold">Landingskin</span>
+					<span class="pull-right label label-important">1 task</span>
+				</li>
+				<li>
+					<i class="icon-folder-close"></i> 
+					<span class="font-bold">Plain</span>
+					<span class="pull-right label label-important">3 tasks</span>
+				</li>
+				<li>
+					<i class="icon-folder-close"></i> 
+					<span class="font-bold">Website</span>
+					<span class="pull-right label label-warning">Pending</span>
+				</li>
+				<li>
+					<i class="icon-folder-close"></i> 
+					<span class="font-bold">Snippets</span>
+					<span class="pull-right label label-warning">4 tasks</span>
+				</li>
+				<li>
+					<i class="icon-folder-close"></i> 
+					<span class="font-bold">Styler</span>
+					<span class="pull-right label label-default">unknown</span>
+				</li>
+			</ul>
+		</article>
+
+
+</aside>
+		<!-- Javascript -->
+		<!-- JS:library-->
+		<script src="js/library/jquery.min.js"></script>
+		<script src="js/library/jquery-ui.min.js"></script>
+
+		<!-- JS:calendar-->
+		<script src='js/styler/calendar/_loader.js'></script>
+		
+		<!-- JS:charts-->
+		<script src="js/styler/charts/jquery.flot.js"></script>
+		<script src="js/styler/charts/jquery.flot.stack.js"></script>
+		<script src="js/styler/charts/jquery.flot.pie.min.js"></script>
+		<script src="js/styler/charts/jquery.sparkline.min.js"></script>
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+
+		<!-- JS:tables-->
+		<script src="js/styler/jquery.dataTables.min.js"></script>
+
+		<!-- JS:bootstrap-->
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		
+		<!-- JS:custom js for this template -->
+		<script src="js/styler/custom.js"></script>
+  	</body>
+</html>
